@@ -39,10 +39,10 @@ class SimonActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_simon)
 
-        simonImageView[0] = findViewById(R.id.greenCell) as SimonCellType
-        simonImageView[1] = findViewById(R.id.redCell) as SimonCellType
-        simonImageView[2] = findViewById(R.id.yellowCell) as SimonCellType
-        simonImageView[3] = findViewById(R.id.blueCell) as SimonCellType
+        simonImageView[0] = findViewById<View>(R.id.greenCell) as SimonCellType
+        simonImageView[1] = findViewById<View>(R.id.redCell) as SimonCellType
+        simonImageView[2] = findViewById<View>(R.id.yellowCell) as SimonCellType
+        simonImageView[3] = findViewById<View>(R.id.blueCell) as SimonCellType
         simonImageView[0]!!.setCellType(SimonCellType.CELL_TYPE_GREEN)
         simonImageView[1]!!.setCellType(SimonCellType.CELL_TYPE_RED)
         simonImageView[2]!!.setCellType(SimonCellType.CELL_TYPE_YELLOW)
